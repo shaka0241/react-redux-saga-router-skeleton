@@ -1,5 +1,4 @@
 import {makeStyles} from '@material-ui/styles';
-import { TextField } from '@material-ui/core';
 
 const centeredStyleObj = {
     display: 'flex',
@@ -34,5 +33,8 @@ export default makeStyles ({
      },
      buttonsContainer: {
          marginTop: '.5rem'
-     }
+     },
+     movieIcon: {
+        fontSize: '3rem'
+    }
 });
