@@ -12,11 +12,11 @@ const MovieResult = ({ Title, Year, Type, imdbID, Poster}) => {
                     <Typography>{Title}</Typography>
                     <Typography>{Year}</Typography>
                     <Typography>{Type}</Typography>
-                        <Button>Ver más</Button>
+                        <Button color="primary" variant="contained">Ver más</Button>
                 </Grid>
             </Grid>
         </Card>
     );
 }
 
-export const MovieResult;
+export default MovieResult;
