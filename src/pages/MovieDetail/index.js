@@ -10,8 +10,9 @@ export default ( { match }) => {
     const movieResult =  useSelector(state => movieResultSelector(state));
     
     useEffect(() => {
-        if(!movieResult) {
+        
         const movieId =  match.params.id;
+        if(!movieResult || movieResult && movieResult.imdbID !== movieId) {
         dispatch(searchMovieById({ movieId }));
         }
     });
